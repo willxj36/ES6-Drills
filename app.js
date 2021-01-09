@@ -15,3 +15,16 @@ getFirstNameConcise('Will Seese');
 
 doMath = (x, y) => ({exponent: x**y, product: x*y});
 console.log(`${doMath.exponent}, ${doMath.product}`);
+
+spreadSyntax = (name, location, faveFood) => console.log(`${name}, ${location}, ${faveFood}`);
+let array = ['Will', 'Colorado', 'pizza'];
+spreadSyntax(...array);
+
+let name = 'Will Seese';
+takesParameter = (parameter) => {
+    let nameArray = [...parameter];
+    for(i = 0; i < nameArray.length; i++) {
+        console.log(nameArray[i]);
+    };
+};
+takesParameter(name);
